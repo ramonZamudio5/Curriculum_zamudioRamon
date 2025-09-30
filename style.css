@@ -1,0 +1,97 @@
+:root {
+    --color-fondo: #f4f4f9;
+    --color-primario: #1d3557;
+    --color-secundario: #457b9d;
+    --color-acento: #e63946;
+    --color-texto: #333;
+    --padding: 15px;
+    --margen: 15px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+
+#navbar {
+    background: var(--color-primario);
+    padding: var(--padding);
+    text-align: center;
+}
+#navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+#navbar a:hover { 
+    color: var(--color-acento);
+}
+
+
+.profile-header {
+    text-align: center;
+    padding: var(--padding);
+    background: var(--color-secundario);
+    color: white;
+    position: relative;
+}
+.foto {
+    border: 4px solid white;
+    border-radius: 15px;
+    margin: var(--margen);
+}
+#nombre::after { 
+    content: " ⭐";
+    color: gold;
+}
+
+
+section {
+    margin: var(--margen);
+    padding: var(--padding);
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: white;
+}
+section h2 {
+    color: var(--color-primario);
+}
+
+
+.descripcion p {
+    width: 400px;
+    height: 80px;
+    overflow: auto; 
+}
+
+
+.idiomas li {
+    float: left;
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    background: var(--color-secundario);
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+.idiomas::after { 
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+footer {
+    text-align: center;
+    background: var(--color-primario);
+    color: white;
+    padding: var(--padding);
+    position: relative;
+    z-index: 5;
+}
